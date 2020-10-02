@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+        <LinearLayout
+            android:id = "@+id/layout1"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="fill_parent">
+
+
+
+
+            <EditText
+                android:id="@+id/EditNombre"
+                android:layout_height="wrap_content"
+                android:hint="@string/feedbackname"
+                android:inputType="textPersonName"
+                android:layout_width="fill_parent">
+            </EditText>
+
+
+
+
+
+            <EditText
+                android:id="@+id/EditTelefono"
+                android:layout_height="wrap_content"
+                android:hint="@string/telefono"
+                android:layout_width="fill_parent">
+            </EditText>
+
+
+
+
+
+
+           <EditText
+                android:id="@+id/Fecha_Nac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:focusable="false"/>
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/EditEmail"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:layout_width="fill_parent">
+            </EditText>
+
+
+
+
+           <EditText
+                android:id="@+id/EditDescripContacto"
+                android:layout_height="wrap_content"
+                android:hint="@string/descripContacto"
+                android:layout_width="fill_parent">
+            </EditText>
+        </LinearLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/BotonEnviar"
+            android:layout_height="wrap_content"
+            android:text="@string/enviar_datos"
+            android:layout_width="wrap_content"
+            android:onClick="sendFeedback"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+        </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
